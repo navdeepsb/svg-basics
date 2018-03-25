@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: "Source Code Pro", monospace;
+	font-family: "Source Sans Pro", sans-serif;
 	background: #333;
 }
 
@@ -39,4 +39,25 @@ body {
 
 .hide {
 	display: none;
+}
+
+.nav {
+	margin-bottom: 60px;
+	text-align: center;
+}
+.nav .link {
+	display: inline-block;
+	color: #eee;
+	background: rgba( 255, 255, 255, 0.1 );
+	width: 110px;
+	padding: 10px;
+	margin-right: 10px;
+	font-size: 0.9rem;
+	text-decoration: none;
+}
+.nav .link:not(.link--active):hover {
+	background: rgba( 255, 255, 255, 0.15 );
+}
+.nav .link.link--active {
+	color: #aa96da;
 }
