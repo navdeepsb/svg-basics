@@ -1,9 +1,9 @@
 // ...
 const navOptions = [{
-	path: "/",
+	path: "path.html",
 	title: "Path basics"
 },{
-	path: "/index2.html",
+	path: "transform.html",
 	title: "Transform basics"
 }];
 const currPath = location.pathname;
