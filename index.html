@@ -1,0 +1,82 @@
+<!-- @src https://css-tricks.com/svg-path-syntax-illustrated-guide/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SVG path basics | @navdeepsb</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+	<div id="container">
+		<div id="canvas">
+			<svg class="svg arc-css" width="500" height="500" viewBox="0 0 500 500">
+				<path class="svg__path svg__path--arc" />
+			</svg><!-- .arc-css -->
+
+			<svg class="svg arc" width="500" height="500" viewBox="0 0 500 500">
+				<path class="svg__path" d="
+					M 250,100
+					a 150,150 0,0,1 150,150
+					" />
+			</svg><!-- .arc -->
+
+			<svg class="svg circle" width="500" height="500" viewBox="0 0 500 500">
+				<circle class="svg__path" cx="250" cy="250" r="150" />
+			</svg><!-- .circle -->
+
+			<svg class="svg circle-ish" width="500" height="500" viewBox="0 0 500 500">
+				<path class="svg__path" d="
+					M 100,250
+					q 0,-150 150,-150
+					t 150,150
+					t -150,150
+					t -150,-150
+					" />
+			</svg><!-- .circle-ish -->
+
+			<svg class="svg arc-ish" width="500" height="500" viewBox="0 0 500 500">
+				<path class="svg__path" d="
+					M 100,250
+					q 0,-150 150,-150
+					" />
+			</svg><!-- .arc-ish -->
+
+			<svg class="svg ellipse" width="500" height="500" viewBox="0 0 500 500">
+				<path class="svg__path" d="
+					M 100,250
+					c 0,-150 300,-150 300,0
+					s -300,150 -300,0
+					" />
+			</svg><!-- .ellipse -->
+
+			<svg class="svg elliptical-arc" width="500" height="500" viewBox="0 0 500 500">
+				<path class="svg__path" d="
+					M 100,250
+					c 0,-150 300,-150 300,0
+					" />
+			</svg><!-- .elliptical-arc -->
+
+			<svg class="svg crucifix" width="500" height="500" viewBox="0 0 500 500">
+				<path class="svg__path" d="
+					M 225,50
+					h 50
+					v 100
+					h 100
+					v 50
+					h -100
+					v 200
+					h -50
+					v -200
+					h -100
+					v -50
+					h 100
+					z
+					" />
+			</svg><!-- .crucifix -->
+		</div><!-- #canvas -->
+	</div><!-- .container -->
+
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

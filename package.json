@@ -1,0 +1,20 @@
+{
+  "name": "svg-basics",
+  "version": "0.0.0",
+  "description": "A demo project to learn SVG in HTML",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "svg",
+    "html",
+    "demo"
+  ],
+  "author": "Navdeep Bagga <navdeepb3191@gmail.com>",
+  "license": "ISC"
+}

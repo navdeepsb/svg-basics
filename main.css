@@ -1,0 +1,42 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Source Code Pro", monospace;
+	background: #333;
+}
+
+#container {
+	width: 500px;
+	margin: 30px auto;
+}
+
+.selector {
+	margin-bottom: 20px;
+}
+
+.svg {
+	display: block;
+	border: 1px solid #eee;
+	display: hide;
+}
+
+.svg__path {
+	stroke: #3fc1c9; /* blue */
+	stroke-width: 3;
+	fill: none;
+}
+.svg__path--alt {
+	stroke: #e23e57; /* red */
+}
+.svg__path--fill {
+	stroke: #ff9a00; /* yellow */
+	fill: #ff9a00; /* yellow */
+}
+
+.svg__path--arc {
+	d: path( "M250,100 a150,150 0,1,0 150,150" );
+}
+
+.hide {
+	display: none;
+}

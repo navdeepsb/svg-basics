@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SVG transform basics | @navdeepsb</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+	<div id="container">
+		<div id="canvas">
+			<svg class="svg" width="500" height="500" viewBox="0 0 500 500">
+				<path class="svg__path"
+					d="M150,300 h200 m-200,-100 h200"
+					transform="translate(0,0) rotate(0 250,250)" />
+				<path class="svg__path svg__path--alt"
+					d="M150,300 h200 m-200,-100 h200"
+					transform="translate(0,0) rotate(90 250,250)" />
+				<circle class="svg__path svg__path--alt svg__path--fill"
+					cx="250" cy="250" r="2" />
+			</svg>
+
+
+		</div><!-- #canvas -->
+	</div><!-- .container -->
+
+</body>
+</html>
