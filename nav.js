@@ -19,7 +19,7 @@ navOptions.forEach( ( nav ) => {
 	link.setAttribute( "href", nav.path );
 	link.innerText = nav.title;
 	link.classList.add( "link" );
-	if( currPath == nav.path ) {
+	if( currPath.indexOf( nav.path ) >= 0 ) {
 		link.classList.add( "link--active" );
 	}
 
