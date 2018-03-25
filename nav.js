@@ -5,6 +5,9 @@ const navOptions = [{
 },{
     path: "transform.html",
     title: "Transform basics"
+},{
+    path: "arc-play.html",
+    title: "Arc basics"
 }];
 const currPath = location.pathname;
 
