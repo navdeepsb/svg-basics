@@ -3,7 +3,7 @@ let selector = document.createElement( "select" );
 let svgElems = document.getElementsByTagName( "svg" );
 
 // ...
-let showSvg = ( name ) => {
+let showSvg = () => {
 	Array.prototype.forEach.call( svgElems, ( el ) =>   el.style.display = "none" );
 	document.getElementsByClassName( selector.value )[ 0 ].style.display = "block" ;
 };
